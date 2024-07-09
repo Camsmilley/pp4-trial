@@ -19,6 +19,24 @@
   --card-BG: rgb(255, 255, 255);
   --card-Hover: rgb(255, 255, 255);
 }
+.btn-add , .btn-sub{
+  background: var(--white-color);
+  padding: 0px 20px;
+  border: 0;
+  /* margin : 10px; */
+
+
+}
+.btn-sub:hover{
+  background: var(--grey-text);
+  padding: 0px 20px;
+  border: 0;
+}
+.btn-add:hover{
+  background: var(--grey-text);
+  padding: 0px 20px;
+  border: 0;
+}
 
 a{
   text-decoration: none;
