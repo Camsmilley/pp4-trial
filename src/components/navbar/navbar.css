@@ -1,0 +1,80 @@
+:root{
+    --primary-color: hsl(199,100%, 33%);
+    --secondary-color: hsl(187,85%, 43%);
+    --gardient-color: linear-gardient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --white-color: hsl(0, 0%, 100%);
+    --black-color: hsl(201, 33%, 16%);
+    --text-color: hsl(240, 4%, 36%);
+    --white-color-deam: hsl(0, 0%, 93%);
+    --grey-text: rgb(190, 190, 190);
+    --input-color: rgb(239,239, 239);
+    --body-color: rgb(240, 240, 246);
+    --card-BG: rgb(255, 255, 255);
+  
+  }
+  
+  .navbar{
+    padding: .8rem;
+  }
+  
+  .navbar-nav li{
+    padding-right: 20px;
+    
+  }
+  
+  .navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+  }
+  
+  .navbar-toggler:focus .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+  }
+  
+  .nav-link{
+    font-size: 1.1em !important;
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .nav-link:hover .nav-link.active{
+    color: #000;
+  }
+  
+  .nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: #5ba2ff;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover::before, .nav-link.active::before{
+    width: 100%;
+    visibility: visible;
+  }
+  
+  .login-button{
+    background-color:#5ba2ff; 
+    border: 1px solid #68d2e8;
+    color: #ffff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    margin-left: 100px;
+  }
+  
+  .login-button:hover{
+    background-color: #68d2e8;
+    border: 1px solid #5ba2ff;
+  }
+  

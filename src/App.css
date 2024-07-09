@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Poppins:wght@300&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+  --primary-color: hsl(199,100%, 33%);
+  --secondary-color: hsl(187,85%, 43%);
+  --gardient-color:  hsl(199, 100%, 33%);
+  --white-color: hsl(0, 0%, 100%);
+  --black-color: hsl(201, 33%, 16%);
+  --text-color: hsl(240, 4%, 36%);
+  --white-color-deam: hsl(0, 0%, 93%);
+  --grey-text: rgb(190, 190, 190);
+  --input-color: rgb(239,239, 239);
+  --body-color: rgb(240, 240, 246);
+  --card-BG: rgb(255, 255, 255);
+  --card-Hover: rgb(255, 255, 255);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a{
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+li{
+  list-style: none;
+}
+
+.section{
+  padding: 4rem 0 2rem;
+}
+
+.container{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.icon{
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.flex{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.grind{
+  display: grid;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn{
+  padding: .6rem 1.5rem;
+  background: var(--gardient-color);
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn a{
+  color: var(--white-color);
+  font-weight: 500;
+}
+
+.btn:hover{
+  background: var(--secondary-color);
+}
+
+img, video{
+  width: 100%;
+  height: auto;
+}
+input{
+  font-size: 100%;
+}
+
+body{
+  background: var(--body-color);
+}
+
+
+@media screen and (min-width: 1240){
+  .container{
+    width: 80% !important;
+    margin:auto !important ;
   }
-  to {
-    transform: rotate(360deg);
+
+  .section{
+    padding: 6rem 0 4rem;
   }
+}
+
+@media screen and (min-width: 2560){
+  body{
+    zoom: 1.7;
+  }
+
 }

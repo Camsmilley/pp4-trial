@@ -1,0 +1,41 @@
+:root {
+    --primary-color: hsl(199,100%, 33%);
+    --secondary-color: hsl(187,85%, 43%);
+    --gardient-color: hsl(199, 100%, 33%);
+    --white-color: hsl(0, 0%, 100%);
+    --black-color: hsl(201, 33%, 16%);
+    --text-color: hsl(240, 4%, 36%);
+    --white-color-deam: hsl(0, 0%, 93%);
+    --grey-text: rgb(190, 190, 190);
+    --input-color: rgb(239,239, 239);
+    --body-color: rgb(240, 240, 246);
+    --card-BG: rgb(255, 255, 255);
+    --card-Hover: rgb(255, 255, 255);
+  }
+  
+  
+  .footer{
+   background-color: #c2cef5;
+   color: var(--black-color);
+   padding-top: 2rem;
+  }
+ 
+  
+ .hr,light{
+   border-top: 1px solid #d5d5d5;
+   width: 75%;
+   border-bottom: 1px solid #d5d5d5;
+   margin-top: .8rem;
+   margin-bottom: 1.5rem ;
+ }
+ 
+ footer a{
+   color: var(--black-color);
+ }
+ 
+ hr.light-100{
+   border-top: 1px solid var(--black-color);
+   width: 100%;
+   margin-top: .8rem;
+   margin-bottom: 1rem ;
+ }
