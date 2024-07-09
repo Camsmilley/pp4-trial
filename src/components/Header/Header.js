@@ -1,7 +1,6 @@
 import React from 'react'
 import './header.css';
 import video from '../../Assets/video1.mp4';
-import { FaLocationDot } from "react-icons/fa6";
 import { TbZoomMoneyFilled } from "react-icons/tb";
 import { TfiFacebook } from "react-icons/tfi";
 import { SiGmail } from "react-icons/si";
@@ -23,36 +22,7 @@ const Header = () => {
             <span className='smallText'>
             Explore the top surfing spots of the Philippines!<br/>
             </span>
-
-            <div className='cardDiv grind'>
-                <div className='destinationInput'>
-                    <label htmlFor='city'>Search your Destination</label>
-                    <div className='input flex'>
-                        <input type='text' placeholder='Enter name here...'/><FaLocationDot className='icon'/>
-                    </div>
-                </div>
-                <div className='dateInput'>
-                    <label htmlFor='date'>Select your date:</label>
-                    <div className='input flex'>
-                        <input type='date'/>
-                    </div>
-                </div>
-                <div className='priceInput'>
-                    <div className='label_total flex'>
-                        <label htmlFor='price'> Max price:</label>
-                        <h3 className='total'>$5000</h3>
-                    </div>
-                      <div className='input flex'>
-                        <input type='range' max='5000' min="1000"></input>
-                   
-                    </div>
-                </div>
-                <div className='searchOptions flex'>
-                <TbZoomMoneyFilled className='icon'/>
-                <span>Book Now</span>
-                </div>
             </div>
-
             <div className='homeFooterIcons flex'>
                 <div className='rightIcons'>
                 <TfiFacebook className='icon'/>
@@ -67,7 +37,6 @@ const Header = () => {
                 </div>
             </div>
         </div>
-    </div>
 </section>
   )
 }

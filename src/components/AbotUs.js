@@ -8,10 +8,13 @@ const AboutUs = () => {
     return(
       <>
       <About/>
-<div className="AboutUs">
-    <div className="text-center ">
-      <div className="col-12">
-        <h5 className="display-6">About Us</h5>
+      <section className='main container section'>
+            <div className='secTitle'>
+                <div className='title'>
+                    <h3>About Us</h3>
+                </div>
+                <small>surfGuru Mission and Vision Statement/ Meet the Team</small>
+                    <h4></h4>
       </div>
       <hr/>
       <div className="col-12 ">
@@ -29,7 +32,6 @@ const AboutUs = () => {
         <h5 className="fw-bold-">Our Vision</h5>
         <p>Our vision is to help our customers enjoy the ocean on the best equipment we can provide, in order to suit their needs.</p>
       </div>
-    </div>
     <div className="row welcome text-center">
     <div className="col-12">
       <h1 className="display-6">Meet the Team</h1>
@@ -62,8 +64,8 @@ const AboutUs = () => {
     </div>
   </div>
 </div>
-</div>
 <hr/>
+</section>
 </>
 );
 }
