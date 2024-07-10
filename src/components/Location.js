@@ -57,7 +57,7 @@ const Location = () => {
               id="flexRadioDefault2"
             />
             <label class="form-check-label" for="flexRadioDefault2">
-              La Union
+              San Juan, La Union
             </label>
           </div>
         </div>
