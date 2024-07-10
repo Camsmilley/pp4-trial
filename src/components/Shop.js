@@ -72,9 +72,17 @@ const Shop = () => {
                           >
                             {item.title}
                           </h5>
-                          <h3 className="card-text mb-3" id={item.id + "price"}>
-                            ${item.price}
-                          </h3>
+                          <div className="d-flex justify-content-center">
+                            <span style={{ fontSize: "24px" }} className="me-2">
+                              $
+                            </span>
+                            <h3
+                              className="card-text mb-3"
+                              id={item.id + "price"}
+                            >
+                              {item.price}
+                            </h3>
+                          </div>
                           <div className="d-flex justify-content-center">
                             <Link
                               class="btn btn-warning bi bi-eye-fill rounded-circle me-2"
