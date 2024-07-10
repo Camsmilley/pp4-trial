@@ -22,7 +22,7 @@ const Search = ({ products }) => {
           {filteredProd.map((item) => (
             <div className="d-flex gap-3 p-2" key={item.id}>
               <div>
-                <div className="pro-thumb h-25">
+                <div className="thumb h-25">
                   <img
                     src={(item.images || [])[0]
                       .replace('["', "")

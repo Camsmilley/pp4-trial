@@ -16,19 +16,19 @@ function App() {
   return (
     <>
       <Navbar />
-      <Home />
+
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Home" element={<Home />} />
-        <Route path="/instructors" element={<Instructor />} />
-        <Route path="/shop" element={<Shop />} />
-        <Route path="shop/:id" element={<SingleProduct />}></Route>
-        <Route path="/safety" element={<Safety />} />
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/login" element={<LoginHere />} />
-        <Route path="surfingInstructor" element={<SurfingInstructor />} />
+        <Route path="#/" element={<Home />} />
+        <Route path="#/home" element={<Home />} />
+        <Route path="#/instructors" element={<Instructor />} />
+        <Route path="#/shop" element={<Shop />} />
+        <Route path="#shop#/:id" element={<SingleProduct />}></Route>
+        <Route path="#/safety" element={<Safety />} />
+        <Route path="#/about" element={<AboutUs />} />
+        <Route path="#/login" element={<LoginHere />} />
+        <Route path="#surfingInstructor" element={<SurfingInstructor />} />
         <Route onclick="beginner" path="beginner" element={<Beginner />} />
-        <Route path="/cart" element={<Cart />}></Route>
+        <Route path="#/cart" element={<Cart />}></Route>
       </Routes>
       <Footer />
     </>
