@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/waveGuru/static/css/main.93501613.css",
+    "main.js": "/waveGuru/static/js/main.1dab0259.js",
+    "static/js/453.ed3810f9.chunk.js": "/waveGuru/static/js/453.ed3810f9.chunk.js",
+    "static/media/video1.mp4": "/waveGuru/static/media/video1.073a5eeb153a13fdcf79.mp4",
+    "static/media/video.mp4": "/waveGuru/static/media/video.8337074d58556d73be58.mp4",
+    "static/media/img4.jpeg": "/waveGuru/static/media/img4.67d8b8b4fcef986da1af.jpeg",
+    "static/media/img2.jpg": "/waveGuru/static/media/img2.4895df6f520f74383bda.jpg",
+    "static/media/img3.jpg": "/waveGuru/static/media/img3.4895df6f520f74383bda.jpg",
+    "static/media/img6.jpg": "/waveGuru/static/media/img6.e523ac2d0f0368cd275b.jpg",
+    "static/media/img.jpg": "/waveGuru/static/media/img.7a2ced9acbc9ce4b7e07.jpg",
+    "static/media/img7.jpg": "/waveGuru/static/media/img7.4c5097b4287f98805612.jpg",
+    "static/media/img8.webp": "/waveGuru/static/media/img8.617eba4beba6e5e1d30b.webp",
+    "static/media/img2.jpeg": "/waveGuru/static/media/img2.a34486bb3addb76e930b.jpeg",
+    "static/media/img13.jpg": "/waveGuru/static/media/img13.06f787f1e406d1d56d68.jpg",
+    "static/media/img5.jpg": "/waveGuru/static/media/img5.d20721e14b5811a8324d.jpg",
+    "static/media/img15.webp": "/waveGuru/static/media/img15.ec79830f96b58cb04fc7.webp",
+    "static/media/img10.jpg": "/waveGuru/static/media/img10.9ab5baa3b16a9012f5d6.jpg",
+    "static/media/img16.webp": "/waveGuru/static/media/img16.d846a4daf5e31f7d3b5f.webp",
+    "static/media/img11.jpg": "/waveGuru/static/media/img11.2c2b456ff129040ecc9a.jpg",
+    "static/media/img9.jpg": "/waveGuru/static/media/img9.5340d4ef1774678969af.jpg",
+    "index.html": "/waveGuru/index.html",
+    "main.93501613.css.map": "/waveGuru/static/css/main.93501613.css.map",
+    "main.1dab0259.js.map": "/waveGuru/static/js/main.1dab0259.js.map",
+    "453.ed3810f9.chunk.js.map": "/waveGuru/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93501613.css",
+    "static/js/main.1dab0259.js"
+  ]
+}
