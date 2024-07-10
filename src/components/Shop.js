@@ -73,7 +73,7 @@ const Shop = () => {
                             {item.title}
                           </h5>
                           <h3 className="card-text mb-3" id={item.id + "price"}>
-                            {item.price}
+                            ${item.price}
                           </h3>
                           <div className="d-flex justify-content-center">
                             <Link
