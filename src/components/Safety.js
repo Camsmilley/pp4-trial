@@ -21,22 +21,22 @@ const Data = [
     {
         id:2,
         imgSrc: img2,
-        character: 'Always surf between the black and white chequered flags',
+        character: 'Surf with a mate',
         description: 'Especially in a big swell. Surfers look out for one another. '
     },
 
     {
         id:3,
         imgSrc: img3,
-        character: 'Always surf between the black and white chequered flags',
-        description: 'Especially in a big swell. Surfers look out for one another. '
+        character: 'Tell someone you’re going surfing',
+        description: 'Let someone know when and where you are going out and, importantly, when you expect to be back. '
     },
 
     {
         id:4,
         imgSrc: img4,
-        character: 'Tell someone you’re going surfing',
-        description: 'Let someone know when and where you are going out and, importantly, when you expect to be back '
+        character: 'Understand surf etiquette and rights of way',
+        description: 'Consider other surfers and water users'
     },
 
     {
