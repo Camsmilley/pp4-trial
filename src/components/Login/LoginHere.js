@@ -33,7 +33,7 @@ function LoginHere() {
 
         // Redirect to home
         if (typeof window !== "undefined") {
-          window.location.href = "/home";
+          window.location.href = "#/home";
         } else {
           console.warn("Redirection not possible in non-browser environment.");
         }
