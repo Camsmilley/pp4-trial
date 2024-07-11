@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./login.css"; // Import your CSS file
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 function LoginHere() {
   const [email, setEmail] = useState("");
@@ -74,7 +75,9 @@ function LoginHere() {
               />
             </div>
             <div className="pass">
-              <a href="#">Forgot password?</a>
+            <label><input type="checkbox" />
+            Remember me</label>
+            <a href="#">Forgot password?</a>
             </div>
             <div className="row button">
               <input
@@ -85,7 +88,7 @@ function LoginHere() {
               />
             </div>
             <div className="signup-link">
-              Not a member? <a href="#">Signup now</a>
+              Not a member? <Link to="/signup">Signup now</Link>
             </div>
           </form>
         </div>

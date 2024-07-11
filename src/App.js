@@ -13,6 +13,8 @@ import Beginner from "./components/beginner/Beginner";
 import SingleProduct from "./components/SingleProduct";
 import Cart from "./components/Cart";
 import InstructorProfile from "./components/InstructorProfile";
+import SignUp from "./components/Login/SignUp";
+
 function App() {
   return (
     <>
@@ -30,7 +32,8 @@ function App() {
         <Route path="/login" element={<LoginHere />} />
         <Route path="surfingInstructor" element={<SurfingInstructor />} />
         <Route onclick="beginner" path="beginner" element={<Beginner />} />
-        <Route path="/cart" element={<Cart />}></Route>
+        <Route path="/cart" element={<Cart />}/>
+        <Route path="/signup" element={<SignUp/>}/>
       </Routes>
       <Footer />
     </>

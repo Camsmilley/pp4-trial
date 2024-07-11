@@ -163,6 +163,15 @@
     margin-bottom: 1rem;
   }
 
+  .surfingInstructors{
+    padding: 50px;
+  }
+
+  .lessonOffered{
+    padding: 50px;
+  }
+
+
   @media screen and (min-width: 500px){
     .title{
     font-size: 1.5rem;

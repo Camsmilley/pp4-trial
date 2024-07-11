@@ -230,7 +230,7 @@ const Main = () => {
                              <div className="card-body">
                      <h4 className="card-title">Beginner</h4>
                         <p className="card-text">What is a beginner surfer?</p>
-                   <button onClick='beginner' className='btn flex'> 
+                   <button className='btn flex'> 
                          Details <LuClipboardEdit className='icon'/></button>
                              </div>
                             </div>
