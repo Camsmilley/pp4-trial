@@ -19,7 +19,7 @@ const Navbar = () => {
 
   const handleCheckout = () => {
     sessionStorage.removeItem("userData");
-    window.location.href = "/home";
+    window.location.href = "#/home";
   };
   return (
     <nav className="navbar navbar-expand-md navbar-light bg-light sticky-top">
