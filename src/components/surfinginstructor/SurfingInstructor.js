@@ -13,7 +13,7 @@ const SurfingInstructor = () => {
 </figure>
 
 
-<div class="surfing-instructor">
+<div class="surfing-instructor ">
   <div class="row welcome text-center gy-3">
     <div class="col-12">
       <h6 class="display-6">Details  Bio & Surfing Experience </h6>
@@ -23,7 +23,7 @@ const SurfingInstructor = () => {
 </div>
 
 
-<div class="surf-instructor">
+<div class="surf-instructor" style={{padding:"100px"}}>
   <div class="row padding gy-3">
     <div class="col-md-4">
       <div class="card">
@@ -40,7 +40,7 @@ const SurfingInstructor = () => {
         <img class="card-imd-top" src={img16}/>
         <div class="card-body">
           <h4 class="card-title">Award</h4>
-          <p class="card-text">ipsum dolor sit amet, consectetur adipisicing elit. Vel, veniam!</p>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, veniam!</p>
             
           </div>
         </div>

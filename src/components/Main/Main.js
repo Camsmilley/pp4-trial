@@ -150,9 +150,8 @@ const Main = () => {
                                     <p>{description}</p>
                                 </div>
 
-                                <button className='btn flex'>
-                                    Details <LuClipboardEdit className='icon'/>
-                                </button>
+                                <Link to="/surfingdestination" className='btn btn-primary'> 
+                                 Details <LuClipboardEdit className='icon'/></Link>
                             </div>
                             </div>
                         )
@@ -192,10 +191,10 @@ const Main = () => {
          uniquely amazing lifestyle and immerse yourself in a culture where you work alongside like-minded and passionate individuals.</p>
        <p>This is not just a job; it’s a journey of personal and professional development, allowing you to hone your people, leadership, and coaching skills while earning a living doing what you love.</p>
     <br/>
-    <Link to="./surfingInstructor" className="btn btn-primary">Learn More</Link>
+    <Link to="/surfinginstructor" className="btn btn-primary">Learn More</Link>
       </div>
     <div className="col-lg-6">
-      <img src={img13} class="img-fluid"/>
+      <img src={img13} className="img-fluid"/>
     </div>
   </div>
 </div>
@@ -230,8 +229,8 @@ const Main = () => {
                              <div className="card-body">
                      <h4 className="card-title">Beginner</h4>
                         <p className="card-text">What is a beginner surfer?</p>
-                   <button className='btn flex'> 
-                         Details <LuClipboardEdit className='icon'/></button>
+                   <Link to="/beginner" className='btn btn-primary'> 
+                         Details <LuClipboardEdit className='icon'/></Link>
                              </div>
                             </div>
                         </div>
@@ -241,9 +240,8 @@ const Main = () => {
                             <div class="card-body">
                     <h4 className="card-title">Intermediate</h4>
                       <p className="card-text">What is an intermediate surfer?</p>
-                    <button className='btn flex'>
-                        Details <LuClipboardEdit className='icon'/>
-                    </button>
+                      <Link to="/intermediate" className='btn btn-primary'> 
+                      Details <LuClipboardEdit className='icon'/></Link>
                              </div>
                          </div>
                      </div>
@@ -253,9 +251,8 @@ const Main = () => {
                                 <div className="card-body">
                          <h4 className="card-title">Advanced</h4>
                              <p className="card-text">What is an advanced surfer?</p>
-                        <button className='btn flex'>
-                             Details <LuClipboardEdit className='icon'/>
-                        </button>
+                             <Link to="/advanced" className='btn btn-primary'> 
+                             Details <LuClipboardEdit className='icon'/></Link>
                                  </div>
                             </div>
                         </div>
