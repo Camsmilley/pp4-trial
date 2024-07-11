@@ -45,7 +45,7 @@ const AboutUs = () => {
   <div className="meet-the-team">
   <div className="row padding gy-3">
     <div className="col-md-6">
-      <div className="card">
+      <div className="card1">
         <img className="card-imd-top" src={profile}/>
         <div className="card-body">
           <h4 className="card-title">Camille Joy Domingo</h4>
@@ -56,7 +56,7 @@ const AboutUs = () => {
       </div>
     </div>
     <div className="col-md-6">
-      <div className="card">
+      <div className="card1">
         <img className="card-imd-top" src={profile2}/>
         <div className="card-body">
           <h4 className="card-title">Ralph Begil</h4>
