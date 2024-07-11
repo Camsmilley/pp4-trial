@@ -2,7 +2,7 @@ const Location = () => {
   return (
     <>
       <div className="card mt-4 border-0 shadow-sm rounded-0">
-        <div className="card-body">
+        <div className="card-body p-4">
           <p>Location</p>
           <div class="form-check">
             <input
@@ -12,7 +12,11 @@ const Location = () => {
               id="flexRadioDefault1"
               checked
             />
-            <label class="form-check-label" for="flexRadioDefault1">
+            <label
+              class="form-check-label"
+              for="flexRadioDefault1"
+              style={{ fontSize: "16px" }}
+            >
               All
             </label>
           </div>
@@ -23,7 +27,11 @@ const Location = () => {
               name="flexRadioDefault"
               id="flexRadioDefault2"
             />
-            <label class="form-check-label" for="flexRadioDefault2">
+            <label
+              class="form-check-label"
+              for="flexRadioDefault2"
+              style={{ fontSize: "16px" }}
+            >
               Siargao , General Luna
             </label>
           </div>
@@ -34,7 +42,11 @@ const Location = () => {
               name="flexRadioDefault"
               id="flexRadioDefault2"
             />
-            <label class="form-check-label" for="flexRadioDefault2">
+            <label
+              class="form-check-label"
+              for="flexRadioDefault2"
+              style={{ fontSize: "16px" }}
+            >
               Siargao , Burgos Pacifico
             </label>
           </div>
@@ -45,7 +57,11 @@ const Location = () => {
               name="flexRadioDefault"
               id="flexRadioDefault2"
             />
-            <label class="form-check-label" for="flexRadioDefault2">
+            <label
+              class="form-check-label"
+              for="flexRadioDefault2"
+              style={{ fontSize: "16px" }}
+            >
               Baler, Aurora
             </label>
           </div>
@@ -56,7 +72,11 @@ const Location = () => {
               name="flexRadioDefault"
               id="flexRadioDefault2"
             />
-            <label class="form-check-label" for="flexRadioDefault2">
+            <label
+              class="form-check-label"
+              for="flexRadioDefault2"
+              style={{ fontSize: "16px" }}
+            >
               San Juan, La Union
             </label>
           </div>

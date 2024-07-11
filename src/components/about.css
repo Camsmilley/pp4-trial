@@ -1,0 +1,18 @@
+.col-12{
+    padding: 15px;
+}
+
+.meet-the-team{
+    height: 60%;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    display: grid;
+}
+
+.card1{
+    padding: 50px;
+    align-items: center;
+    align-content: center;
+    row-gap: 20px;
+}

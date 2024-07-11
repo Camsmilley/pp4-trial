@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Location from "../components/Location";
 import Category from "../components/Category";
 import Search from "../components/Search";
 
 const Shop = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const url = "https://api.escuelajs.co/api/v1/products";
   const [product, setProduct] = useState([]);
+  const navigate = useNavigate();
   const [order, setOrder] = useState([]);
 
   useEffect(() => {
@@ -21,9 +23,30 @@ const Shop = () => {
     const existingOrder = JSON.parse(sessionStorage.getItem("final") || "[]");
     setOrder(existingOrder);
   }, []);
-  const addToCart = (id) => {
-    const existingOrder = JSON.parse(sessionStorage.getItem("final") || "[]");
 
+  useEffect(() => {
+    const userData = sessionStorage.getItem("userData");
+    setIsLoggedIn(!!userData);
+  }, []);
+
+  const handleProductClick = (id) => {
+    const userData = sessionStorage.getItem("userData");
+    if (userData) {
+      navigate(`/shop/${id}`);
+    } else {
+      alert("You must be logged in to view product.");
+    }
+  };
+
+  const addToCart = (id) => {
+    const userData = sessionStorage.getItem("userData");
+
+    if (!userData) {
+      alert("You need to log in to add items to the cart!");
+      return;
+    }
+
+    const existingOrder = JSON.parse(sessionStorage.getItem("final") || "[]");
     const itemExists = existingOrder.some((item) => item.id === id);
 
     if (itemExists) {
@@ -41,7 +64,6 @@ const Shop = () => {
       alert("Product added to cart!");
     }
   };
-
   return (
     <>
       <div className="container  shadow-sm mb-5" style={{ marginTop: "2rem" }}>
@@ -83,11 +105,11 @@ const Shop = () => {
                           </div>
                           <div className="card-button">
                             <div className="d-flex justify-content-center ">
-                              <Link
+                              <button
+                                onClick={() => handleProductClick(item.id)}
                                 class="c-btn  bi bi-eye-fill  me-2"
                                 style={{ color: "white" }}
-                                to={`/shop/${item.id}`}
-                              ></Link>
+                              ></button>
 
                               <button
                                 class="c-btn  bi bi-heart-fill  me-2"

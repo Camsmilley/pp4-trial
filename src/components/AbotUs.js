@@ -2,6 +2,9 @@ import React from 'react';
 import { FiChevronRight } from "react-icons/fi";
 import { GiWaveSurfer } from "react-icons/gi";
 import About from '../components/About'
+import './about.css'
+import profile from '../Assets/profile.png'
+import profile2 from '../Assets/profile2.png'
 
 
 const AboutUs = () => {
@@ -31,18 +34,19 @@ const AboutUs = () => {
       <div className="col-12">
         <h5 className="fw-bold-">Our Vision</h5>
         <p>Our vision is to help our customers enjoy the ocean on the best equipment we can provide, in order to suit their needs.</p>
+     <hr/>
       </div>
     <div className="row welcome text-center">
     <div className="col-12">
-      <h1 className="display-6">Meet the Team</h1>
+      <h1 className="display-7">Meet the Team</h1>
     </div>
     <hr/>
   </div>
-  <div className="container padding">
-  <div className="row padding">
+  <div className="meet-the-team">
+  <div className="row padding gy-3">
     <div className="col-md-6">
-      <div className="card">
-        <img className="card-imd-top" src=""/>
+      <div className="card1">
+        <img className="card-imd-top" src={profile}/>
         <div className="card-body">
           <h4 className="card-title">Camille Joy Domingo</h4>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
@@ -52,8 +56,8 @@ const AboutUs = () => {
       </div>
     </div>
     <div className="col-md-6">
-      <div className="card">
-        <img className="card-imd-top" src=""/>
+      <div className="card1">
+        <img className="card-imd-top" src={profile2}/>
         <div className="card-body">
           <h4 className="card-title">Ralph Begil</h4>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 

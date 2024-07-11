@@ -160,9 +160,9 @@ const Main = () => {
                       <p>{description}</p>
                     </div>
 
-                    <button className="btn flex">
+                    <Link to="/surfingdestination" className="btn btn-primary">
                       Details <LuClipboardEdit className="icon" />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               );
@@ -196,9 +196,9 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="surfingInstructors p-5">
+      <div className="surfingInstructors">
         <div className="row padding gy-3">
-          <div className="col-md-12 col-lg-6 p-5">
+          <div className="col-md-12 col-lg-6">
             <h2>Become a Surfing Instrutor</h2>
             <p>
               wave Guru on a fulfilling career as a surf instructor – one of the
@@ -215,15 +215,17 @@ const Main = () => {
               you love.
             </p>
             <br />
-            <Link to="./surfingInstructor" className="btn btn-primary">
+            <Link to="/surfinginstructor" className="btn btn-primary">
               Learn More
             </Link>
           </div>
           <div className="col-lg-6">
-            <img src={img13} class="img-fluid" />
+            <img src={img13} className="img-fluid" />
           </div>
         </div>
       </div>
+
+      <hr className="my-4" />
 
       <figure>
         <div className="fixed-wrap">
@@ -231,11 +233,12 @@ const Main = () => {
         </div>
       </figure>
 
-      <div className="lessonOfferd ">
+      <div className="lessonOfferd">
         <div className="row welcome text-center gy-3">
           <div className="col-12">
             <h2>Type of Lesson Offered</h2>
           </div>
+          <hr />
         </div>
       </div>
       <div className="lesson">
@@ -246,13 +249,9 @@ const Main = () => {
               <div className="card-body">
                 <h4 className="card-title">Beginner</h4>
                 <p className="card-text">What is a beginner surfer?</p>
-                <button
-                  onClick="beginner"
-                  className="btn flex"
-                  style={{ color: "white" }}
-                >
+                <Link to="/beginner" className="btn btn-primary">
                   Details <LuClipboardEdit className="icon" />
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -262,9 +261,9 @@ const Main = () => {
               <div class="card-body">
                 <h4 className="card-title">Intermediate</h4>
                 <p className="card-text">What is an intermediate surfer?</p>
-                <button className="btn flex" style={{ color: "white" }}>
+                <Link to="/intermediate" className="btn btn-primary">
                   Details <LuClipboardEdit className="icon" />
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -274,9 +273,9 @@ const Main = () => {
               <div className="card-body">
                 <h4 className="card-title">Advanced</h4>
                 <p className="card-text">What is an advanced surfer?</p>
-                <button className="btn flex" style={{ color: "white" }}>
+                <Link to="/advanced" className="btn btn-primary">
                   Details <LuClipboardEdit className="icon" />
-                </button>
+                </Link>
               </div>
             </div>
           </div>

@@ -77,13 +77,21 @@ form .row input::placeholder{
   justify-content: center;
 }
 .wrapper form .pass{
-  margin: -8px 0 20px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
 }
-.wrapper form .pass a{
-  color: rgb(13, 110, 253);
-  font-size: 17px;
-  text-decoration: none;
+
+.wrapper form label {
+accent-color: #fff;
+margin-right: 4px;
+padding-top: 10px;
 }
+.wrapper form a{
+  padding-top: 10px;
+}
+
 .wrapper form .pass a:hover{
   text-decoration: underline;
 }
@@ -95,6 +103,7 @@ form .row input::placeholder{
   background: #16a085;
   border: 1px solid #16a085;
   cursor: pointer;
+  padding-top: -20px;
 }
 form .button input:hover{
   background: #12876f;
@@ -110,4 +119,13 @@ form .button input:hover{
 }
 form .signup-link a:hover{
   text-decoration: underline;
+}
+
+.button1{
+  font-size: 200%;
+  font-weight: 500%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem;
+  grid-template-columns: repeat(2,1fr);
 }
