@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./login.css"; // Import your CSS file
 import axios from "axios";
+import { FaUser } from "react-icons/fa";
 
 function LoginHere() {
   const [email, setEmail] = useState("");
@@ -14,7 +15,8 @@ function LoginHere() {
     setPassword(e.target.value);
   };
 
-  const handleApi = async () => {
+  const handleApi = async (e) => {
+    e.preventDefault(); // Prevent form submission
     try {
       const response = await axios.post("https://reqres.in/api/login", {
         email,
@@ -23,7 +25,12 @@ function LoginHere() {
 
       if (response.data.token) {
         console.log(response.data);
+        const userLogin = [{ email: email, pass: password }];
 
+        // Store email and password in session storage
+        sessionStorage.setItem("userData", JSON.stringify(userLogin));
+
+        // Redirect to home
         if (typeof window !== "undefined") {
           window.location.href = "/home";
         } else {
@@ -41,21 +48,19 @@ function LoginHere() {
   return (
     <>
       <div className="login">
-        {" "}
-        {/* Use className for better accessibility */}
         <div className="wrapper">
           <div className="title">
-            <a href="index.html">
-              <em className="text-primary">wave</em>
-              <span className="text-warning">Guru</span>
-            </a>
+            <p className="text-primary">
+              <i>wave</i>
+            </p>
+            <h1 className="text-warning">Guru</h1>
           </div>
-          <form action="#">
+          <form onSubmit={handleApi}>
             <div className="row">
-              <i className="fas fa-user bg-primary"></i>
+              <i className="bi bi-person-fill bg-primary"></i>
               <input
                 type="text"
-                placeholder="Email "
+                placeholder="Email"
                 value={email}
                 onChange={handleEmail}
                 id="user"
@@ -63,7 +68,7 @@ function LoginHere() {
               />
             </div>
             <div className="row">
-              <i className="fas fa-lock bg-primary"></i>
+              <i className="bi bi-lock-fill bg-primary"></i>
               <input
                 type="password"
                 placeholder="Password"
@@ -77,12 +82,7 @@ function LoginHere() {
               <a href="#">Forgot password?</a>
             </div>
             <div className="row button">
-              <input
-                type="submit"
-                onClick={handleApi}
-                value="Login"
-                className="bg-primary"
-              />
+              <input type="submit" value="Login" className="bg-primary" />
             </div>
             <div className="signup-link">
               Not a member? <a href="#">Signup now</a>

@@ -1,6 +1,9 @@
 import img1 from "../Assets/gradient.png";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import cert from "../Assets/cert.jpg";
+import cert1 from "../Assets/cert.webp";
+import fs from "../Assets/fs.jpg";
 
 const InstructorProfile = () => {
   const url = "https://reqres.in/api/users?page=2";
@@ -49,7 +52,9 @@ const InstructorProfile = () => {
                         />
                       </div>
                       <div className="ms-3" style={{ marginTop: "130px" }}>
-                        <h5 id="instructorName"> </h5>
+                        <h5 id="instructorName">
+                          {item.first_name} {item.last_name}
+                        </h5>
                         <p>General Luna SDN</p>
                       </div>
                     </div>
@@ -73,14 +78,17 @@ const InstructorProfile = () => {
                       <div className="mb-2  text-body">
                         <p className="lead fw-normal mb-1">Bio</p>
                         <div className="p-4 bg-body-tertiary">
-                          <p className="font-italic mb-1">
-                            My name is Marama Tokong and I've been catching
-                            waves and sharing my passion for surfing for 26
-                            years. Having grown up by the beach in Siargao, the
-                            ocean has always been my playground. I started
-                            surfing at a young age and there's nothing more
-                            rewarding than helping others experience the thrill
-                            of riding a wave.
+                          <p className="font-italic mb-1 p-4">
+                            My name is{" "}
+                            <span style={{ fontSize: "16px" }}>
+                              {item.first_name} {item.last_name}
+                            </span>{" "}
+                            and I've been catching waves and sharing my passion
+                            for surfing for 26 years. Having grown up by the
+                            beach in Siargao, the ocean has always been my
+                            playground. I started surfing at a young age and
+                            there's nothing more rewarding than helping others
+                            experience the thrill of riding a wave.
                           </p>
                         </div>
                       </div>
@@ -90,19 +98,19 @@ const InstructorProfile = () => {
                           Experience and Certificates
                         </p>
                         <div className="p-4 bg-body-tertiary">
-                          <p className="font-italic mb-1">
+                          <p className="font-italic mb-1 p-3">
                             Surfing Champion 2012, Best Surfer
                           </p>
                         </div>
-                        <div className="row">
+                        <div className="row p-2">
                           <div className="col-md-4">
-                            <img src="img/cert.webp" className="w-100 h-100" />
+                            <img src={cert} className="w-100 h-100" />
                           </div>
                           <div className="col-md-4">
-                            <img src="img/cert.webp" className="w-100 h-100" />
+                            <img src={cert1} className="w-100 h-100" />
                           </div>
                           <div className="col-md-4">
-                            <img src="img/cert.webp" className="w-100 h-100" />
+                            <img src={fs} className="w-100 h-100" />
                           </div>
                         </div>
                       </div>
@@ -110,7 +118,7 @@ const InstructorProfile = () => {
 
                     <p>
                       <button
-                        className="btn btn-primary"
+                        className="btn btn-primary ms-5"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseExample"
@@ -120,8 +128,8 @@ const InstructorProfile = () => {
                         Book a lesson
                       </button>
                     </p>
-                    <div className="collapse" id="collapseExample">
-                      <div className="card-body border bg-body-tertiary mb-5">
+                    <div className="collapse p-5" id="collapseExample">
+                      <div className="card-body border bg-body-tertiary mb-5 p-5">
                         <div className="form-check form-check-inline">
                           <input
                             className="form-check-input"
@@ -192,114 +200,74 @@ const InstructorProfile = () => {
                         </button>
                       </div>
                     </div>
+                    <div className="container p-5">
+                      <div className="row">
+                        <div className="col-md-4">
+                          <div className="card ">
+                            <div
+                              className="bg-primary rounded-top"
+                              style={{ height: "150px", width: "100%" }}
+                            ></div>
+                            <div className="img2">
+                              <img src={item.avatar} alt="" />
+                            </div>
+                            <hr className="mb-0" />
+                            <div className="card-body">
+                              <p className="card-text">
+                                <em>
+                                  " Very professional instructor, caring and
+                                  cheap. Thank you so much for the experience"
+                                </em>
+                              </p>
+                              <h5 className="review-count ms-auto">- Kyle</h5>
+                            </div>
+                          </div>
+                        </div>
 
-                    <div className="row">
-                      <div className="col-md-4">
-                        <div className="card ">
-                          <div
-                            className="bg-primary rounded-top"
-                            style={{ height: "150px", width: "100%" }}
-                          ></div>
-                          <div className="img2">
-                            <img src="img/marama.jpg" alt="" />
-                          </div>
-                          <hr className="mb-0" />
-                          <div className="card-body">
-                            <p className="card-text">
-                              <em>
-                                " Very professional instructor, caring and
-                                cheap. Thank you so much for the experience"
-                              </em>
-                            </p>
-                            <h5 className="review-count ms-auto">- Kyle</h5>
+                        <div className="col-md-4">
+                          <div className="card ">
+                            <div
+                              className="bg-primary rounded-top"
+                              style={{ height: "150px", width: "100%" }}
+                            ></div>
+                            <div className="img2">
+                              <img src={item.avatar} alt="" />
+                            </div>
+                            <hr className="mb-0" />
+                            <div className="card-body">
+                              <p className="card-text">
+                                <em>
+                                  " Very professional instructor, caring and
+                                  cheap. Thank you so much for the experience"
+                                </em>
+                              </p>
+                              <h5 className="review-count ms-auto">- Kyle</h5>
+                            </div>
                           </div>
                         </div>
-                      </div>
 
-                      <div className="col-md-4">
-                        <div className="card ">
-                          <div
-                            className="bg-primary rounded-top"
-                            style={{ height: "150px", width: "100%" }}
-                          ></div>
-                          <div className="img2">
-                            <img src="img/marama.jpg" alt="" />
+                        <div className="col-md-4">
+                          <div className="card ">
+                            <div
+                              className="bg-primary rounded-top"
+                              style={{ height: "150px", width: "100%" }}
+                            ></div>
+                            <div className="img2">
+                              <img src={item.avatar} alt="" />
+                            </div>
+                            <hr className="mb-0" />
+                            <div className="card-body">
+                              <p className="card-text">
+                                <em>
+                                  " Very professional instructor, caring and
+                                  cheap. Thank you so much for the experience"
+                                </em>
+                              </p>
+                              <h5 className="review-count ms-auto">
+                                <strong />- Kyle
+                              </h5>
+                            </div>
                           </div>
-                          <hr className="mb-0" />
-                          <div className="card-body">
-                            <p className="card-text">
-                              <em>
-                                " Very professional instructor, caring and
-                                cheap. Thank you so much for the experience"
-                              </em>
-                            </p>
-                            <h5 className="review-count ms-auto">- Kyle</h5>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="col-md-4">
-                        <div className="card ">
-                          <div
-                            className="bg-primary rounded-top"
-                            style={{ height: "150px", width: "100%" }}
-                          ></div>
-                          <div className="img2">
-                            <img src="img/marama.jpg" alt="" />
-                          </div>
-                          <hr className="mb-0" />
-                          <div className="card-body">
-                            <p className="card-text">
-                              <em>
-                                " Very professional instructor, caring and
-                                cheap. Thank you so much for the experience"
-                              </em>
-                            </p>
-                            <h5 className="review-count ms-auto">
-                              <strong />- Kyle
-                            </h5>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="d-flex justify-content-between align-items-center mb-4 text-body">
-                        <p className="lead fw-normal mb-0">Recent photos</p>
-                        <p className="mb-0">
-                          <a href="#!" className="text-muted">
-                            Show all
-                          </a>
-                        </p>
-                      </div>
-                      <div className="row g-2">
-                        <div className="col mb-2">
-                          <img
-                            src="img/surf.jpg"
-                            alt="image 1"
-                            className="w-100 "
-                          />
-                        </div>
-                        <div className="col mb-2">
-                          <img
-                            src="img/marama1.jpg"
-                            alt="image 1"
-                            className="w-100 "
-                          />
-                        </div>
-                      </div>
-                      <div className="row g-2">
-                        <div className="col">
-                          <img
-                            src="img/wave2.jpg"
-                            alt="image 1"
-                            className="w-100 h-100 "
-                          />
-                        </div>
-                        <div className="col">
-                          <img
-                            src="img/wave1.jpg"
-                            alt="image 1"
-                            className="w-100 h-100"
-                          />
                         </div>
                       </div>
                     </div>

@@ -41,9 +41,10 @@ const Shop = () => {
       alert("Product added to cart!");
     }
   };
+
   return (
     <>
-      <div className="container  shadow-sm" style={{ marginTop: "2rem" }}>
+      <div className="container  shadow-sm mb-5" style={{ marginTop: "2rem" }}>
         <div className="row justify-content-center">
           <div className="col-md-8 col-12 mt-4">
             <article>
@@ -55,7 +56,7 @@ const Shop = () => {
                   <>
                     <div className="col-md-4">
                       <div
-                        className="card border-0 rounded-0 shadow-sm mb-2 "
+                        className="card border-0 rounded-0 shadow-sm mb-2 card-shop "
                         style={{ width: "17rem" }}
                       >
                         <img
@@ -65,41 +66,40 @@ const Shop = () => {
                           className="card-img-top rounded-0"
                           id={item.id + "image"}
                         />
-                        <div className="card-body text-center">
-                          <h5
-                            className="card-title mb-3"
-                            id={item.id + "title"}
-                          >
+                        <div className="card-body text-center title-card">
+                          <p className="card-title mb-3" id={item.id + "title"}>
                             {item.title}
-                          </h5>
+                          </p>
                           <div className="d-flex justify-content-center">
                             <span style={{ fontSize: "24px" }} className="me-2">
                               $
                             </span>
-                            <h3
+                            <h2
                               className="card-text mb-3"
                               id={item.id + "price"}
                             >
                               {item.price}
-                            </h3>
+                            </h2>
                           </div>
-                          <div className="d-flex justify-content-center">
-                            <Link
-                              class="btn btn-warning bi bi-eye-fill rounded-circle me-2"
-                              style={{ color: "white" }}
-                              to={`/shop/${item.id}`}
-                            ></Link>
+                          <div className="card-button">
+                            <div className="d-flex justify-content-center ">
+                              <Link
+                                class="c-btn  bi bi-eye-fill  me-2"
+                                style={{ color: "white" }}
+                                to={`/shop/${item.id}`}
+                              ></Link>
 
-                            <button
-                              class="btn btn-warning bi bi-heart-fill rounded-circle me-2"
-                              style={{ color: "white" }}
-                            ></button>
+                              <button
+                                class="c-btn  bi bi-heart-fill  me-2"
+                                style={{ color: "white" }}
+                              ></button>
 
-                            <button
-                              class="btn btn-warning bi bi-cart4 rounded-circle"
-                              style={{ color: "white" }}
-                              onClick={() => addToCart(item.id)}
-                            ></button>
+                              <button
+                                class="c-btn  bi bi-cart4 "
+                                style={{ color: "white" }}
+                                onClick={() => addToCart(item.id)}
+                              ></button>
+                            </div>
                           </div>
                         </div>
                       </div>

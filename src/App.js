@@ -13,6 +13,8 @@ import Beginner from "./components/beginner/Beginner";
 import SingleProduct from "./components/SingleProduct";
 import Cart from "./components/Cart";
 import InstructorProfile from "./components/InstructorProfile";
+import BuyNowPage from "./components/Checkout";
+
 function App() {
   return (
     <>
@@ -24,6 +26,7 @@ function App() {
         <Route path="/instructor" element={<Instructor />} />
         <Route path="instructor/:id" element={<InstructorProfile />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="checkout/:id" element={<BuyNowPage />} />
         <Route path="shop/:id" element={<SingleProduct />}></Route>
         <Route path="/safety" element={<Safety />} />
         <Route path="/about" element={<AboutUs />} />

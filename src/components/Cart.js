@@ -74,7 +74,7 @@ const Cart = () => {
   };
   return (
     <>
-      <div className="container mt-5">
+      <div className="container mt-5 mb-5">
         <table className="table">
           <thead>
             <tr>
@@ -131,7 +131,7 @@ const Cart = () => {
           </tbody>
         </table>
         <div className="d-flex justify-content-end">
-          <h3>Total: $ {cost.toFixed(2)}</h3>
+          <h4>Total: $ {cost.toFixed(2)}</h4>
         </div>
         <button className="btn btn-primary ms-2" onClick={handleCheckout}>
           Checkout

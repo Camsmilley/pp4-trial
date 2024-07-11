@@ -117,12 +117,45 @@ body{
   margin-top: -80px;
 
 }
+.title-card{
+  
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card-shop{
+  height: 400px;
+}
+
+.card-button{
+  width: 100%;
+ height: 100%;
+ top:0;
+ right: -1000%;
+ position: absolute;
+ background-color: #1f3d4738;
+ backdrop-filter: blur(5px);
+}
+.card:hover .card-button{
+ 
+ 
+ right: 0;
+
+}
+
+.c-btn{
+  margin-top: 60%;
+  border-radius: 5px;
+  border: 0;
+  background-color: rgb(37, 150, 190);
+  padding: 10px 20px;
+}
 
 
 @media screen and (min-width: 1240){
   .container{
-    width: 80% !important;
-    margin:auto !important ;
+   
+    
   }
 
   .section{

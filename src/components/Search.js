@@ -30,6 +30,7 @@ const Search = ({ products }) => {
                     alt=""
                     width={70}
                     className="flex-{grow|shrink}-0"
+                    style={{ width: "100px", height: "100px" }}
                   />
                 </div>
               </div>

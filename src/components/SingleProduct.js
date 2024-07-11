@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const SingleProduct = () => {
   const url = "https://api.escuelajs.co/api/v1/products";
@@ -45,7 +46,7 @@ const SingleProduct = () => {
   };
   return (
     <>
-      <div className="container shadow-sm mt-3">
+      <div className="container shadow-sm mt-3 mb-5">
         <div className="row">
           <div className="col-md-6">
             {result.map((item) => (
@@ -53,10 +54,9 @@ const SingleProduct = () => {
                 <div className="d-flex justify-content-center">
                   <img
                     src={item.images[0].replace('["', "").replace('"', "")}
-                    width="500"
-                    height="500"
                     className="shadow-sm  rounded-0 m-5"
                     id={item.id + "image"}
+                    style={{ width: "400px", height: "400px" }}
                   />
                 </div>
               </>
@@ -69,13 +69,21 @@ const SingleProduct = () => {
                   <h2 className="mt-5 mb-3" id={item.id + "title"}>
                     {item.title.toUpperCase()}
                   </h2>
-                  <h3 className="mb-3" id={item.id + "price"}>
-                    {item.price}
-                  </h3>
+                  <div className="d-flex ">
+                    <span style={{ fontSize: "24px" }} className="me-2">
+                      $
+                    </span>
+                    <h3 className="card-text mb-3" id={item.id + "price"}>
+                      {item.price}
+                    </h3>
+                  </div>
                   <p className="mb-4">{item.description}</p>
-                  <button className="btn btn-primary p-3 mt-4 me-4">
+                  <Link
+                    className="btn btn-primary p-3 mt-4 me-4"
+                    to={`/checkout/${item.id}`}
+                  >
                     Buy now <i className="bi bi-bag ms-3"></i>
-                  </button>
+                  </Link>
                   <button
                     className="btn btn-warning p-3 mt-4 "
                     onClick={() => addToCart(item.id)}

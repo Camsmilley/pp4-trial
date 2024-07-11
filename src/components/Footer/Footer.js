@@ -27,7 +27,6 @@ const Footer = () => {
             <p>+639-000-000-000</p>
             <p>waveGuru@gmail.com</p>
             <p>123 Street Name</p>
-            <p>City,Province,0000</p>
           </div>
           <div class="col-md-4">
             <hr class="light" />

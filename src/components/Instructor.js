@@ -29,7 +29,7 @@ const Instructor = () => {
                     <div className="col-md-4">
                       <div class="card mb-3">
                         <div class="img1">
-                          <img src={img1} alt="" />
+                          <img src={img1} alt="" style={{ height: "150px" }} />
                         </div>
                         <div class="img2">
                           <img src={item.avatar} alt="" />
